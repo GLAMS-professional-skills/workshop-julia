@@ -1,0 +1,16 @@
+{
+	"name": "Julia dev",
+	"image": "docker.io/julia",
+	"postCreateCommand": "julia .devcontainer/install.jl",
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"ms-toolsai.jupyter",
+				"julialang.language-julia"
+			]
+		}
+	},
+	"containerEnv": {
+		"SHELL": "/bin/bash"
+	}
+}
